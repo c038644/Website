@@ -4,121 +4,184 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Interactive CV</title>
-<link rel="stylesheet" href="./style.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+    font-family: 'Sono', sans-serif;
+    }
+
+    .project_section {
+    display: flex;
+    flex-direction: row;
+    }
+
+    .project {
+    flex: 1;
+    max-width: 800px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    text-align: left;
+    align-items:flex-start;
+    }
+
+    .title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+
+    .subtitle {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    }     
+
+    .project_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    @media (max-width: 1000px) {
+    .project_section {
+        flex-direction: column;
+        height: 100%;
+    }
+    }
+</style>
 </head>
+
 <body>
 
-<header>
-    <h1>Peter Scaife</h1>
-    <p>Contact: <a href="mailto:peter_scaife_phd@yahoo.co.uk">peter_scaife_phd@yahoo.co.uk</a></p>
-    <p><a href="https://www.linkedin.com/in/peter-scaife-data-scientist/">LinkedIn</a></p>
-</header>
+<div class="title">Peter Scaife</div> 
+<div class ="subtitle">Technical skills</div>
 
-<section id="technical">
-    <h2>Technical skills</h2>
-    <p><strong>Data Engineering</strong></p>
-    <ul>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/python_basic%20certificate.pdf">Python</a></li>  
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/CP_Capture.PNG">AWS</a></li>
-        <li>Microsoft Azure</li>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-0e7511c7-0786-4583-808e-b59c26ca9ab0.pdf">Google Cloud</a></li>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/Peter_Scaife_Databricks.pdf">Databricks</a></li>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/sql_intermediate%20certificate.pdf">SQL</a> and Mongo DB</li>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-e261f195-38c6-4ec8-b5a4-2570f8d57d8f.pdf">Test Driven Development</a></li>        
-    </ul>
-
-    <p><strong>Data Science</strong></p>
-    <ul>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-30de6210-27e7-462f-ab25-754a27130a87.pdf">Statistics</a></li>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-6afdb7fe-9b1b-45ea-bd51-4d1aa7ee18c1.pdf">Tensorflow & Keras</a></li>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-d1f1f552-41ed-493b-8668-d09d027ad33a.pdf">Deep Learning</a></li>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-c897c3dc-c4dc-4770-b4bb-ed692f7643ea.pdf">Time Series Analysis</a></li>        
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-2728dfd0-a21d-4658-913c-74a32adca243.pdf">Recommender Systems</a></li>
-        <li>NLP (Bag of Words, Tf-idf, Word2Vec, BERT, USE)</li>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/DP-100.pdf">Machine Learning</a></li>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-57fc3dd6-e057-4741-a3b1-8fa40e919f3f.pdf">A/B Testing</a></li>    
-        <li>Clustering (KMeans, DBSCAN)</li>
-    </ul>
-
-    <p><strong>Front End Development</strong></p>
-    <ul>
-        <li>GitHub</li>
-        <li>HTML, CSS</li>
-        <li>Flexbox, Grid, Bootstrap</li>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/DP-100.pdf">Streamlit</a></li>
-    </ul>
-
-        <p><strong>Back End Development</strong></p>
-    <ul>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-7c4447d2-67b9-4aa3-823b-b7c8db68773a.pdf">Flask</a></li>
-        <li>Use of API's</li>
-    </ul>
+<div class ="project_section">
     
-</section>
-
-<section id="education">
-    <h2>Education</h2>
-    <p><strong>Openclassrooms</strong>, <a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/OpenClassrooms_Masters_Peter_Scaife.pdf">Data Science</a>, Masters Level, 2022</p>
-    <a href="https://github.com/c038644/OpenClassrooms/tree/main">Projects included</a>:
+    <div class ="project">
+        
+        <div class ="project_title">Data Engineering</div>
         <ul>
-            <li>Deploy a model in the cloud: Used AWS EMR to preprocess image 
-            files with ResNet50 programmed in Spark.</li>
-        
-            <li>Implement a scoring model: Creation of a streamlit dashboard and 
-            separate API to visualise customer credit ratings. Machine learning 
-            including hyperparameter optimisation and custom scoring functions. 
-            Use of SHAP and LIME visualisations.</li>
-        
-            <li>Automatically classify consumer goods: Demonstration of NLP 
-            techniques for text data. VGG16 and SIFT for image features.</li>
-
-            <li>Segment customers of an e-commerce site: Included elbow method, 
-            silhouette scores, KMeans, DBSCAN and agglomerative clustering.</li>
-
-            <li>Anticipate building consumption needs: Machine learning including 
-            hyperparameter optimisation and use of SHAP.</li>
-
-            <li>Build an app for public health: Data cleaning and filling.</li>
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/python_basic%20certificate.pdf">Python</a></li>  
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/CP_Capture.PNG">AWS</a></li>
+            <li>Microsoft Azure</li>
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-0e7511c7-0786-4583-808e-b59c26ca9ab0.pdf">Google Cloud</a></li>
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/Peter_Scaife_Databricks.pdf">Databricks</a></li>
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/sql_intermediate%20certificate.pdf">SQL</a> and Mongo DB</li>
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-e261f195-38c6-4ec8-b5a4-2570f8d57d8f.pdf">Test Driven Development</a></li>        
         </ul>
+    </div>
+    <div class ="project">
+        <div class ="project_title">Data Science</div>
+        <ul>
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-30de6210-27e7-462f-ab25-754a27130a87.pdf">Statistics</a></li>
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-6afdb7fe-9b1b-45ea-bd51-4d1aa7ee18c1.pdf">Tensorflow & Keras</a></li>
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-d1f1f552-41ed-493b-8668-d09d027ad33a.pdf">Deep Learning</a></li>
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-c897c3dc-c4dc-4770-b4bb-ed692f7643ea.pdf">Time Series Analysis</a></li>        
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-2728dfd0-a21d-4658-913c-74a32adca243.pdf">Recommender Systems</a></li>
+            <li>NLP (Bag of Words, Tf-idf, Word2Vec, BERT, USE)</li>
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/DP-100.pdf">Machine Learning</a></li>
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-57fc3dd6-e057-4741-a3b1-8fa40e919f3f.pdf">A/B Testing</a></li>    
+            <li>Clustering (KMeans, DBSCAN)</li>
+        </ul>
+    </div>
+    <div class ="project">
+        <div class ="project_title">Front End Development</div>
+        <ul>
+            <li>GitHub</li>
+            <li>HTML, CSS</li>
+            <li>Flexbox, Grid, Bootstrap</li>
+            <li><a href="https://lifeonmars-hangqglswxvspgshyo9rol.streamlit.app/">Streamlit</a></li>
+        </ul>
+    </div>
+    <div class ="project">
+        <div class ="project_title">Back End Development</div>
+        <ul>
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/UC-7c4447d2-67b9-4aa3-823b-b7c8db68773a.pdf">Flask</a></li>
+            <li>Use of API's</li>
+        </ul>
+    </div>
+</div> 
+<div class ="subtitle">Education</div> 
+<div class ="project_section">  
+    <div class ="project">
 
-    <p><strong>The University of East Anglia</strong>, <a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/BSc%20Certificate.pdf">Organic Chemistry</a>, PhD, 2000 - 2004</p>
-    <ul>
-        <li>Thesis entitled "Synthesis and characterisation of novel porphyrins for use in supramolecular chemistry"</li>
-        <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/Organic%20Letters%20Paper.pdf">Research paper</a> published in Organic Letters</li>
-    </ul>
+        <p><strong>Openclassrooms</strong>, <a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/OpenClassrooms_Masters_Peter_Scaife.pdf">Data Science</a>, Masters Level, 2022</p>
+        <a href="https://github.com/c038644/OpenClassrooms/tree/main">Projects included</a>:
+            <ul>
+                <li>Deploy a model in the cloud: Used AWS EMR to preprocess image 
+                files with ResNet50 programmed in Spark.</li>
+        
+                <li>Implement a scoring model: Creation of a streamlit dashboard and 
+                separate API to visualise customer credit ratings. Machine learning 
+                including hyperparameter optimisation and custom scoring functions. 
+                Use of SHAP and LIME visualisations.</li>
 
-    <p><strong>The University of East Anglia</strong>, <a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/BSc%20Certificate.pdf">Chemistry</a>, BSc, 1997 - 2000</p> 
-    <ul>
-        <li>Three-year degree course completed in organic chemistry</li>
-        <li>Final year laboratory project on the potential value of phthalocyanines in the medicinal use of photodynamic therapy</li>
-    </ul>    
-</section>
+                <li>Automatically classify consumer goods: Demonstration of NLP 
+                techniques for text data. VGG16 and SIFT for image features.</li>
 
-<section id="experience">
-    <h2>Work Experience</h2>
-    <p><strong>Sparta Global</strong>, <a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/Data%20223%20Certificate%20-%20Peter%20Scaife.pdf">Junior Data Engineering Consultant</a>, 2023 - Present</p>
-    <ul>
-        <li>Data engineering working on ETL projects to enhance data flow</li>
-        <li>SQL and NoSQL Databases</li>
-        <li>Use of Cloud Technologies e.g AWS, Google, Microsoft Azure</li>
-    </ul>
-    
-    <p><strong>Self-Employed Market Trader</strong>, 2015 - 2023</p>
-    <ul>
-        <li>Taking market opportunities in under or over valuations of shares, indices, currencies and commodities</li>
-        <li>Analysis of company profit and loss accounts to assess rates of expansion or contraction</li>
-        <li>Following important announcements from for example the US central reserve and the ECB</li>
-    </ul>
-    
-    <p><strong>Johnson Matthey</strong>, Prototype Samples Technician, 2005 - 2015</p>
-    <ul>
-        <li>Project management of LEAN initiatives</li>
-        <li>Implementation of Kaizen projects</li>
-        <li>Batching of washcoats for flow-through catalysts</li>
-        <li>Batching of washcoats for catalysed soot filters</li>
-        <li>Auditing and undertaking health and safety duties</li>
-    </ul>
-</section>
+                <li>Segment customers of an e-commerce site: Included elbow method, 
+                silhouette scores, KMeans, DBSCAN and agglomerative clustering.</li>
+
+                <li>Anticipate building consumption needs: Machine learning including 
+                hyperparameter optimisation and use of SHAP.</li>
+
+                <li>Build an app for public health: Data cleaning and filling.</li>
+            </ul>
+    </div>
+    <div class ="project">   
+        <p><strong>The University of East Anglia</strong>, <a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/PhD%20Certificate.pdf">Organic Chemistry</a>, PhD, 2000 - 2004</p>
+        <ul>
+            <li>Thesis entitled "Synthesis and characterisation of novel porphyrins for use in supramolecular chemistry"</li>
+            <li><a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/Organic%20Letters%20Paper.pdf">Research paper</a> published in Organic Letters</li>
+        </ul>
+    </div> 
+    <div class ="project">
+        <p><strong>The University of East Anglia</strong>, <a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/BSc%20Certificate.pdf">Chemistry</a>, BSc, 1997 - 2000</p> 
+        <ul>
+            <li>Three-year degree course completed in organic chemistry</li>
+            <li>Final year laboratory project on the potential value of phthalocyanines in the medicinal use of photodynamic therapy</li>
+        </ul>
+    </div>
+</div>
+<div class ="subtitle">Work Experience</div>
+<div class ="project_section">   
+    <div class = "project">
+
+        <p><strong>Sparta Global</strong>, <a href="https://github.com/c038644/OpenClassrooms/blob/main/Academic%20Paper/Data%20223%20Certificate%20-%20Peter%20Scaife.pdf">Junior Data Engineering Consultant</a>, 2023 - Present</p>
+        <ul>
+            <li>Data engineering working on ETL projects to enhance data flow</li>
+            <li>SQL and NoSQL Databases</li>
+            <li>Use of Cloud Technologies e.g AWS, Google, Microsoft Azure</li>
+        </ul>
+    </div>
+    <div class = "project">
+        <p><strong>Self-Employed Market Trader</strong>, 2015 - 2023</p>
+        <ul>
+            <li>Taking market opportunities in under or over valuations of shares, indices, currencies and commodities</li>
+            <li>Analysis of company profit and loss accounts to assess rates of expansion or contraction</li>
+            <li>Following important announcements from for example the US central reserve and the ECB</li>
+        </ul>
+    </div>
+    <div class="project">
+        <p><strong>Johnson Matthey</strong>, Prototype Samples Technician, 2005 - 2015</p>
+        <ul>
+            <li>Project management of LEAN initiatives</li>
+            <li>Implementation of Kaizen projects</li>
+            <li>Batching of washcoats for flow-through catalysts</li>
+            <li>Batching of washcoats for catalysed soot filters</li>
+            <li>Auditing and undertaking health and safety duties</li>
+        </ul>
+    </div>
+</div>
+
+    <p>Contact: <a href="mailto:peter_scaife_phd@yahoo.co.uk">peter_scaife_phd@yahoo.co.uk</a></p>
+    <p>See my LinkedIn <a href="https://www.linkedin.com/in/peter-scaife-data-scientist/">Profile</a></p>
+</div>
 
 </body>
+
 </html>
