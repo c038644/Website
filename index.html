@@ -5,40 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peter's Project Showcase</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+        font-family: 'Sono', sans-serif;
+        }
+    
+        .project_section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        gap: 2rem;
+        }
+    
+        .project {
+        flex: 1;
+        max-width: 400px;
+        padding: 20px;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        text-align: center;
+        }
+
+        .title {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        text-align: center;
+        }    
+
+        .project_title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        }
+    
+        @media (max-width: 1250px) {
+        .project_section {
+            flex-direction: column;
+            height: 100%;
+        }
+        }
+    </style>
 </head>
 
 <body>
-    <header>
-        <h1>Peter's Project Showcase</h1>
-    </header>
+<div class="title">Peter's Project Showcase</div> 
 
-    <section>
+    <div class ="project_section">
         <div class="project">
-            <h2>Project 1: Life On Mars</h2>
+        <div class="project_title">Project 1: Life On Mars</div>
             <p>Looking at exoplanets and attempting to estimate the probability that life could exist on some of these planets.</p>
             <a href="https://c038644.github.io/Life_On_Mars/">
-                <img class="img" src="./images/Life_On_Mars.jpg" src="Life On Mars">
+                <img width="600" img class="img" src="./images/Life_On_Mars.jpg" alt="Life On Mars">
             </a>
         </div>
 
         <div class="project">
-            <h2>Project 2: Credit Rating Calculator</h2>
+            <div class="project_title">Project 2: Credit Rating Calculator</div>
             <p>Using machine learning to calculate the risk of default of credit lent to a customer.</p>
             <a href="https://c038644-git-main-4wr9um.streamlit.app/">
-                <img class="img" src="./images/Credit_Rating.jpg" src="Credit Rating Gauge">
+                <img width="600" img class="img" src="./images/Credit_Rating.jpg" alt="Credit Rating Gauge">
             </a>
         </div>
 
         <div class="project">
-            <h2>CV</h2>
+            <div class="project_title">CV</div>
             <p>My interactive CV.</p>
             <a href="./CV.html">
-                <img class="img" src="./images/Peter_Scaife_CV_2023-1.jpg" src="CV">
+                <img width="600" img class="img" src="./images/Peter_Scaife_CV_2023-1.jpg" alt="CV">
             </a>
         </div>
-
-    </section>
+    </div>
 </body>
 
 </html>
