@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Interactive CV</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    section {
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Peter Scaife's CV</h1>
-    <img src="./Peter_Scaife_CV_2023-1.jpg" height='1000' alt="Peter Scaife's CV"/>
+
+  <header>
+    <h1>Your Name</h1>
+    <p>Contact: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+  </header>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>Openclassrooms</strong>, Data Science, Masters Level, 2022</p>
+    Projects included:
+        <ul>
+            <li>Deploy a model in the cloud: Used AWS EMR to preprocess image 
+            files with ResNet50 programmed in Spark.</li>
+        
+            <li>Implement a scoring model: Creation of a streamlit dashboard and 
+            separate API to visualise customer credit ratings. Machine learning 
+            including hyperparameter optimisation and custom scoring functions. 
+            Use of SHAP and LIME visualisations.</li>
+        
+            <li>Automatically classify consumer goods: Demonstration of NLP 
+            techniques for text data. VGG16 and SIFT for image features.</li>
+
+            <li>Segment customers of an e-commerce site: Included elbow method, 
+            silhouette scores, KMeans, DBSCAN and agglomerative clustering.</li>
+
+            <li>Anticipate building consumption needs: Machine learning including 
+            hyperparameter optimisation and use of SHAP.</li>
+
+            <li>Build an app for public health: Data cleaning and filling.</li>
+        </ul>
+      
+        Technical skills (Cloud Services):
+            <ul>
+                <li>AWS (e.g. EC2, EMR, S3)</li>  
+                <li>Microsoft Azure</li> 
+                <li>Google Cloud</li> 
+            </ul>         
+                
+        Technical skills (Data Science):   
+            <ul>
+                <li>Convolutional Neural Networks (e.g. VGG16, ResNet50)</li>
+                <li>NLP (e.g. Bag of Words, Tf-idf, Word2Vec, BERT, USE)</li>
+                <li>Machine Learning (e.g. Random Forests)</li> 
+                <li>Clustering (i.e. KMeans, DBSCAN)</li>
+            </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <p><strong>Company Name</strong>, Position, Start Date - End Date</p>
+    <ul>
+      <li>Responsibility 1</li>
+      <li>Responsibility 2</li>
+    </ul>
+  </section>
+
 </body>
 </html>
+
