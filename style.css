@@ -19,3 +19,26 @@
     margin-left: auto;
     margin-right: 15px;
 }
+
+.hide {
+    display: none;
+}
+
+  /* Show the second div when hovering over the first div */
+.myDIV:hover + .hide {
+    display: block;
+}
+
+  /* Add styles as needed */
+.myDIV {
+    cursor: pointer;
+    /* Add other styles as needed */
+}
+
+  /* Add styles for the images in the second div */
+.hide img {
+    /* Add image-specific styles */
+    max-width: 100%;
+    height: auto;
+    /* Add other styles as needed */
+}
