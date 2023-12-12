@@ -4,9 +4,9 @@
     background-repeat: no-repeat;
 }
 
-.body_background {
-    background-color: #83B8F5;
+body {
     margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .title_text {
