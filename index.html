@@ -19,15 +19,6 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" a href="mailto:peter_scaife_phd@yahoo.co.uk">Contact</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Project List
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" a href="https://c038644.github.io/Life_On_Mars/"><img src="./images/Life_On_Mars.JPG" alt="Life On Mars" width="200"></a></li>
-                            <li><a class="dropdown-item" href="https://c038644-git-main-4wr9um.streamlit.app/"><img src="./images/Credit_Rating.JPG" alt="Credit Rating Calculator" width="200"></a></li>
-                        </ul>
-                    </li>
                 </ul>
                 <div class="navbar-right-image">
                     <a href="https://www.linkedin.com/in/peter-scaife-data-scientist/">
@@ -38,6 +29,71 @@
         </div>
     </nav>
     <div class="matrix">
+        <div class="container text-center">
+            <div class="title_text">
+                <h1>Projects</h1>
+            </div>    
+        </div>
+        <div class="container text-left">
+            <section id="Projects">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="bd-placeholder-img card-img-top" src="./images/Life_On_Mars.JPG" alt="Life On Mars" height="300">
+                            <div class="card-body">
+                                <h5 class="card-title">Life On Mars</h5>
+                                <p class="card-text">
+                                    As part of a team of five data engineers we created an ETL pipeline to look at exoplanets and attempt to estimate the probability that life could exist on some of these planets. The team found a suitable data source at the 
+                                    <a href="https://exoplanetarchive.ipac.caltech.edu/docs/data.html"> NASA Exoplanet Archive </a> and setup a TAP request to extract relevant features for our study. The main steps in this project were:
+                                    <ul>
+                                        <li>EDA of the dataset</li>
+                                        <li>Creation of an ETL pipeline using Microsoft Azure cloud services</li>
+                                        <li>Creation of an interactive Power BI dashboard</li>
+                                        <li>Creation of a Life On Mars <a href="https://c038644.github.io/Life_On_Mars/">website</a></li>
+                                        <li>Creation of a Life On Mars <a href="https://drive.google.com/file/d/184hg-4z72tQ95F7aHq2gejDmJmKKCBIw/view?usp=sharing">promotional video</a></li>
+                                    </ul> 
+                                </p>
+                            </div>
+                        </div>
+                    </div>  
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="bd-placeholder-img card-img-top" src="./images/Credit_Rating.JPG" alt="Credit Rating Calculator" height="300">
+                            <div class="card-body">
+                                <h5 class="card-title">Credit Rating Calculator</h5>
+                                <p class="card-text">
+                                    For module seven of my Masters, I was examining an imbalanced classification dataset set on credit issued to customers of a bank. Depending on the credit rating of the customer the loaned sum was either returned to the bank with interest or the customer defaulted on the loan. The goal of the project was to use machine learning to provide a recommendation as to whether the bank should provide a loan to a particular customer or not. The main steps in this <a href="https://github.com/c038644/OpenClassrooms/blob/main/P7/P7_Notebook.ipynb">project</a> were:
+                                    <ul>
+                                        <li>EDA of the dataset</li>
+                                        <li>Preparation of the imbalanced data with SMOTE and undersampling</li>
+                                        <li>Comparison of several machine learning models scored on accuracy and speed</li>
+                                        <li>Understanding of the most important features with SHAP and LIME</li>
+                                        <li>For the highest scoring models hyperparameter optimisation with a custom scoring function</li>
+                                        <li>Creation of a Credit Rating Calculator <a href="https://c038644-git-main-4wr9um.streamlit.app/">website</a></li>
+                                    </ul> 
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm">
+                        <div class="card">
+                            <img class="bd-placeholder-img card-img-top" src="./images/EMR.JPG" alt="Big Data with Spark" height="300">
+                            <div class="card-body">
+                                <h5 class="card-title">Big Data with Spark</h5>
+                                <p class="card-text">
+                                    For module eight of my Masters, I was preprocessing image files with ResNet50 in Spark on an AWS EMR instance. The main steps in this <a href="https://github.com/c038644/OpenClassrooms/blob/main/P8/Notebook.ipynb">project</a> were:
+                                    <ul>
+                                        <li>Transfer of the image dataset to an S3 bucket</li>
+                                        <li>Creation of an array of ResNes50 image vectors</li>
+                                        <li>Performing a PCA on the ResNes50 image vectors</li>
+                                        <li>Saving the PCA features to the S3 bucket</li>
+                                    </ul> 
+                                </p>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </section>
         <div class="container text-center">
             <div class="title_text">
                 <h1>Technical Skills</h1>
