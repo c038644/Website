@@ -49,6 +49,17 @@ body {
   display: block;
   margin: 0 auto;     /* centers the image in the card */
 }
+.card-img-top {
+  max-width: 300px;     /* don’t stretch */
+  max-height: 200px;    /* cap height */
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;       /* centers the image inside card */
+}
+
+
 .card {
   max-width: 320px;
   height: auto;         /* shrink-wrap content */
