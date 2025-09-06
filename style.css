@@ -51,7 +51,6 @@ body {
 }
 /* General card styling */
 .card {
-  max-width: 320px;      /* keep cards narrow */
   margin: 1rem auto;     /* spacing and centering */
   height: auto;          /* shrink-wrap to content */
   display: inline-block; /* prevents full-width stretching */
