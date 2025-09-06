@@ -40,4 +40,9 @@ body {
     height: auto;
     /* Add other styles as needed */
 }
-
+.bd-placeholder-img {
+  width: 100%;          /* fill container width */
+  height: auto;         /* scale proportionally */
+  max-height: 200px;    /* don’t let it get taller than 200px */
+  object-fit: contain;  /* make sure whole image is visible */
+}
