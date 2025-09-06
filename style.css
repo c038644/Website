@@ -40,33 +40,28 @@ body {
     height: auto;
     /* Add other styles as needed */
 }
-.bd-placeholder-img {
-  max-width: 300px;   /* adjust as you like */
-  max-height: 200px;  /* keeps it from being too tall */
-  width: auto;        /* scale proportionally */
-  height: auto;       /* scale proportionally */
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;     /* centers the image in the card */
-}
-/* General card styling */
+/* Cards */
 .card {
-  margin: 1rem auto;     /* spacing and centering */
-  height: auto;          /* shrink-wrap to content */
-  display: inline-block; /* prevents full-width stretching */
-  vertical-align: top;   /* helps if you have a grid of cards */
+  margin-bottom: 1.5rem;   /* spacing between rows */
+  height: 100%;            /* makes cards equal height in the row */
+  display: flex;
+  flex-direction: column;  /* keeps body below image */
 }
 
-/* Image at the top of card */
+/* Card images */
 .card-img-top {
-  max-width: 300px;      /* don’t let image get huge */
-  max-height: 200px;     /* keep it short */
-  width: auto !important;/* override Bootstrap forcing 100% */
-  height: auto !important;
-  object-fit: contain;   /* show whole image without cropping */
-  display: block;        /* ensures block element for margin */
-  margin: 0 auto;        /* center image in the card */
+  width: 100%;             /* take full card width */
+  height: auto;            /* scale proportionally */
+  max-height: 200px;       /* optional: cap tall images */
+  object-fit: contain;     /* show full image (may leave whitespace) */
 }
+
+/* Optional uniform look: crop images instead of whitespace */
+.card-img-top.cover {
+  object-fit: cover;       /* fills area, crops edges */
+  height: 200px;           /* fixed height for neat grid */
+}
+
 
 
 
