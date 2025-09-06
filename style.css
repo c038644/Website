@@ -49,3 +49,8 @@ body {
   display: block;
   margin: 0 auto;     /* centers the image in the card */
 }
+.card {
+  max-width: 320px;   /* or whatever width you want */
+  margin: 0 auto;     /* center it if needed */
+}
+
