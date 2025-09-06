@@ -49,20 +49,25 @@ body {
   display: block;
   margin: 0 auto;     /* centers the image in the card */
 }
-.card-img-top {
-  max-width: 300px;     /* don’t stretch */
-  max-height: 200px;    /* cap height */
-  width: auto;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;       /* centers the image inside card */
-}
-
-
+/* General card styling */
 .card {
-  max-width: 320px;
-  height: auto;         /* shrink-wrap content */
+  max-width: 320px;      /* keep cards narrow */
+  margin: 1rem auto;     /* spacing and centering */
+  height: auto;          /* shrink-wrap to content */
+  display: inline-block; /* prevents full-width stretching */
+  vertical-align: top;   /* helps if you have a grid of cards */
 }
+
+/* Image at the top of card */
+.card-img-top {
+  max-width: 300px;      /* don’t let image get huge */
+  max-height: 200px;     /* keep it short */
+  width: auto !important;/* override Bootstrap forcing 100% */
+  height: auto !important;
+  object-fit: contain;   /* show whole image without cropping */
+  display: block;        /* ensures block element for margin */
+  margin: 0 auto;        /* center image in the card */
+}
+
 
 
