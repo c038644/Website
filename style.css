@@ -41,8 +41,11 @@ body {
     /* Add other styles as needed */
 }
 .bd-placeholder-img {
-  width: 100%;          /* fill container width */
-  height: auto;         /* scale proportionally */
-  max-height: 200px;    /* don’t let it get taller than 200px */
-  object-fit: contain;  /* make sure whole image is visible */
+  max-width: 300px;   /* adjust as you like */
+  max-height: 200px;  /* keeps it from being too tall */
+  width: auto;        /* scale proportionally */
+  height: auto;       /* scale proportionally */
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;     /* centers the image in the card */
 }
